@@ -1,0 +1,13 @@
+[package]
+name = "monero_c-rust-ffi"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.65.1"
+
+[build]
+rustc-link-search = ["./lib"]
+rustc-link-lib = ["monero_aarch64-apple-darwin11_libwallet2_api_c"]
